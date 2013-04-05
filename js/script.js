@@ -2,7 +2,7 @@
  * Store the url for the request to the hash.php
  * @type {String}
  */
-var site = 'http://hash.imiodrag.com/hash.php';
+var site = 'http://localhost/hash/hash.php';
 /**
  * Makes the ajax request to the hash.php and checks if there is data in the input field
  * 
