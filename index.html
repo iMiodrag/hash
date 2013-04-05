@@ -17,13 +17,7 @@
       <link rel="apple-touch-icon" href="apple-touch-icon.png">
     -->
 
-
-    <!-- very bad idea to have this enabled on all sites! -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
-
-
     <link rel="shortcut icon" href="favicon.ico">
-
 
     <!-- html5 elements for ie<9 -->
     <!--[if lte IE 8 ]> <script type="text/javascript">var htmlForIe = ["abbr" ,"article" ,"aside" ,"audio" ,"canvas" ,"details" ,"figcaption" ,"figure" ,"footer" ,"header" ,"hgroup" ,"mark" ,"meter" ,"nav" ,"output" ,"progress" ,"section" ,"summary" ,"time" ,"video"], htmlForIeLen = htmlForIe.length; for(i=0;i<htmlForIeLen;i++){ document.createElement(htmlForIe[i]); }</script> <![endif]-->
@@ -33,25 +27,42 @@
   <body>
     <div class="container text-center">
       <div class="page-header">
-        <h1>ssh 2 convertor</h1>
+        <h1>HASH# convertor</h1>
         <small>For testing purposes</small>
       </div>
-      
-      <div class="input-append">
-        <input class="span2" id="appendedInputButton" type="text" placeholder="String to convert">
-        <button class="btn" type="button">Go!</button>
-      </div>
+      <form class="navbar-form">
+        <div class="input-append">
+          <input class="span3 string-convert" id="appendedInputButton" type="text" placeholder="String to convert">
+          <button class="btn btn-primary" type="button">Go!</button>
+        </div>
+      </form>
+      <div class="answer">
+        <table class="table table-hover">
+          <tr>
+            <td class="span2"><strong>MD5</strong></td>
+            <td class="wait md5"> no input </td>
+          </tr>
+          <tr>
+            <td class="span2"><strong>SHA1</strong></td>
+            <td class="wait sha1"> no input </td>
+          </tr>
+          <tr>
+            <td class="span2"><strong>SHA256</strong></td>
+            <td class="wait sha256"> no input </td>
+          </tr>
+          <tr>
+            <td class="span2"><strong>SHA384</strong></td>
+            <td class="wait sha384"> no input </td>
+          </tr>
+          <tr>
+            <td class="span2"><strong>SHA512</strong></td>
+            <td class="wait sha512"> no input </td>
+          </tr>
+        </table>
+      </div><!-- end answer -->
     </div><!--end ./container-->
-    <script src="http://code.jquery.com/jquery-latest.min.js"></script>
-    <script>!window.jQuery && document.write(unescape('%3Cscript src="js/lib/jquery-latest.min.js"%3E%3C/script%3E'))</script>
-
-
-    <!--[if lte IE 8]>
-      <script src="js/lib/selectivizr.js" type="text/javascript""></script>
-    <![endif]-->
-
-
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script>!window.jQuery && document.write(unescape('%3Cscript src="js/script.js"%3E%3C/script%3E'))</script>
     <script src="js/script.js" type="text/javascript"></script>
-
   </body>
 </html>
