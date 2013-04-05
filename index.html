@@ -25,18 +25,23 @@
     <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css" media="screen">
   </head>
   <body>
-    <div class="container text-center">
+    <div class="container-fluid text-center">
       <div class="page-header">
         <h1>HASH# convertor</h1>
         <small>For testing purposes</small>
       </div>
-      <form class="navbar-form">
-        <div class="input-append">
-          <input class="span3 string-convert" id="appendedInputButton" type="text" placeholder="String to convert">
-          <button class="btn btn-primary" type="button">Go!</button>
-        </div>
+      <form class="navbar-form" action="hash.php" method="get">
+      <div class="navbar">
+          <div class="input-append">
+            <input class="span3 string-convert" id="appendedInputButton" type="text" placeholder="Type string to convert">
+            <button class="btn btn-primary btn-submit" type="submit">Go!</button>
+          </div>
+      </div><!-- end navbar -->
       </form>
       <div class="answer">
+      <div class="alert error-holder hidden">
+            <strong>Holy guacamole!</strong> Type something dude!
+      </div>
         <table class="table table-hover">
           <tr>
             <td class="span2"><strong>MD5</strong></td>
@@ -60,6 +65,10 @@
           </tr>
         </table>
       </div><!-- end answer -->
+      <footer>
+        <a href="http://twitter.com/iMiodrag" target="_blank">iMiodrag</a> - <a href="https://github.com/iMiodrag/hash">Github code</a>
+        <small>You can get a json response like this: <em>http://hash.imiodrag.com/hash.php?hash=[STRING HERE]</em></small>
+      </footer>
     </div><!--end ./container-->
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
     <script>!window.jQuery && document.write(unescape('%3Cscript src="js/script.js"%3E%3C/script%3E'))</script>

@@ -1,6 +1,7 @@
 <?php
 /**
  * Basic stuff, for a basic job :-)
+ * v0.1
  */
 if( isset($_GET['hash']) && !empty($_GET['hash'])){
   $hash = urldecode($_GET['hash']);
