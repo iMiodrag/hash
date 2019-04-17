@@ -1,77 +1,12 @@
 <!DOCTYPE html>
-<!--[if lt IE 7 ]> <html lang="en" class="no-js msie ie6 lte9 lte8 lte7"> <![endif]-->
-<!--[if IE 7 ]>    <html lang="en" class="no-js msie ie7 lte9 lte8 lte7"> <![endif]-->
-<!--[if IE 8 ]>    <html lang="en" class="no-js msie ie8 lte9 lte8"> <![endif]-->
-<!--[if IE 9 ]>    <html lang="en" class="no-js msie ie9 lte9"> <![endif]-->
-<!--[if (gt IE 9)|!(IE)]><!--> <html lang="en" class="no-js"> <!--<![endif]-->
+<html>
   <head>
     <meta charset="utf-8">
-    <title>HASH# convertor</title>
-    <meta http-equiv="Content-type" content="text/html; charset=utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <!-- uncomment next lines for native-looking app on ios devices -->
-
-    <!-- 
-      <meta name="apple-mobile-web-app-capable" content="yes"> 
-      <meta name="apple-mobile-web-app-status-bar-style" content="black">
-      <link rel="apple-touch-icon" href="apple-touch-icon.png">
-    -->
-
-    <link rel="shortcut icon" href="favicon.ico">
-
-    <!-- html5 elements for ie<9 -->
-    <!--[if lte IE 8 ]> <script type="text/javascript">var htmlForIe = ["abbr" ,"article" ,"aside" ,"audio" ,"canvas" ,"details" ,"figcaption" ,"figure" ,"footer" ,"header" ,"hgroup" ,"mark" ,"meter" ,"nav" ,"output" ,"progress" ,"section" ,"summary" ,"time" ,"video"], htmlForIeLen = htmlForIe.length; for(i=0;i<htmlForIeLen;i++){ document.createElement(htmlForIe[i]); }</script> <![endif]-->
-
-    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css" media="screen">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>hash</title>
   </head>
   <body>
-    <div class="container-fluid text-center">
-      <div class="page-header">
-        <h1>HASH# convertor</h1>
-        <small>For testing purposes</small>
-      </div>
-      <form class="navbar-form" action="hash.php" method="get">
-      <div class="navbar">
-          <div class="input-append">
-            <input class="span3 string-convert" id="appendedInputButton" type="text" placeholder="Type string to convert">
-            <button class="btn btn-primary btn-submit" type="submit">Go!</button>
-          </div>
-      </div><!-- end navbar -->
-      </form>
-      <div class="answer">
-      <div class="alert error-holder hidden">
-            <strong>Holy guacamole!</strong> Type something dude!
-      </div>
-        <table class="table table-hover">
-          <tr>
-            <td class="span2"><strong>MD5</strong></td>
-            <td class="wait md5"> no input </td>
-          </tr>
-          <tr>
-            <td class="span2"><strong>SHA1</strong></td>
-            <td class="wait sha1"> no input </td>
-          </tr>
-          <tr>
-            <td class="span2"><strong>SHA256</strong></td>
-            <td class="wait sha256"> no input </td>
-          </tr>
-          <tr>
-            <td class="span2"><strong>SHA384</strong></td>
-            <td class="wait sha384"> no input </td>
-          </tr>
-          <tr>
-            <td class="span2"><strong>SHA512</strong></td>
-            <td class="wait sha512"> no input </td>
-          </tr>
-        </table>
-      </div><!-- end answer -->
-      <footer>
-        <a href="http://twitter.com/iMiodrag" target="_blank">iMiodrag</a> - <a href="https://github.com/iMiodrag/hash">Github code</a>
-        <small>You can get a json response like this: <em>http://hash.imiodrag.com/hash.php?hash=[STRING HERE]</em></small>
-      </footer>
-    </div><!--end ./container-->
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-    <script>!window.jQuery && document.write(unescape('%3Cscript src="js/script.js"%3E%3C/script%3E'))</script>
-    <script src="js/script.js" type="text/javascript"></script>
+    <div id="app"></div>
+    <!-- built files will be auto injected -->
   </body>
 </html>

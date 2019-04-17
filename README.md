@@ -1,6 +1,27 @@
-I find myself sometimes that I need some kind of hashes in order to test an application that I'm working on, so there are some websites that I've used in the past but most of them are not quick.
+# hash
 
-######################################################################################################
- http://hash.imiodrag.com
-#####################################################################################################
-Use it how you want it :-)
+> Testing VUE.js & converting old website
+
+## Build Setup
+
+``` bash
+# install dependencies
+npm install
+
+# serve with hot reload at localhost:8080
+npm run dev
+
+# build for production with minification
+npm run build
+
+# build for production and view the bundle analyzer report
+npm run build --report
+
+# run unit tests
+npm run unit
+
+# run all tests
+npm test
+```
+
+For a detailed explanation on how things work, check out the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
