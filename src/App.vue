@@ -1,8 +1,8 @@
 <template>
   <div id="app" class="container-fluid text-center">
     <Header></Header>
-    <Search></Search>
-    <Results></Results>
+    <Search @inputData="updateResults"></Search>
+    <Results :userString="userString"></Results>
     <Footer></Footer>
   </div>
 </template>
@@ -20,6 +20,16 @@ export default {
     Header,
     Results,
     Footer
+  },
+  data: function() {
+    return {
+      userString: ""
+    };
+  },
+  methods: {
+    updateResults: function (userString) {
+      this.userString = userString
+    }
   }
 }
 </script>

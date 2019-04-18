@@ -31,6 +31,21 @@
 <script>
 
 export default {
-  name: 'Results'
+  name: 'Results',
+  methods: {
+      updateResults: function () {
+          console.log('results received');
+      }
+  },
+    props: {
+        userString: {
+        type: String
+        }
+    },
+    watch: {
+        userString: function() {
+            console.log('triggered', this.userString);
+        }
+    }
 }
 </script>
