@@ -2,7 +2,7 @@
   <div id="app" class="container-fluid text-center">
     <Header></Header>
     <Search @inputData="updateResults"></Search>
-    <Results :userString="userString"></Results>
+    <Results :resultItems="resultItems"></Results>
     <Footer></Footer>
   </div>
 </template>
@@ -23,12 +23,12 @@ export default {
   },
   data: function() {
     return {
-      userString: ""
+      resultItems: []
     };
   },
   methods: {
-    updateResults: function (userString) {
-      this.userString = userString
+    updateResults: function (resultItems) {
+      this.resultItems = resultItems
     }
   }
 }
